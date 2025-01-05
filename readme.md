@@ -12,7 +12,7 @@
 1. 저장소 복제
 2. 필요한 패키지 설치:
 ```bash
-pip install matplotlib numpy
+pip install -r requirements.txt
 ```
 
 ### 실행 방법
