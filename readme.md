@@ -125,5 +125,9 @@ python main.py
 ## 출력 파일
 프로그램 실행 시 생성되는 시각화 파일들:
 - `gantt_chart.png`: 각 스케줄러의 실행 타임라인
+![gantt_chart](https://github.com/user-attachments/assets/28e8bc60-3044-48af-ba53-a138ff259d38)
 - `performance_comparison.png`: 스케줄러 간 성능 비교
+![performance_comparison](https://github.com/user-attachments/assets/8edac56c-0e0a-42b2-a399-dcbcb78270a4)
 - `timeline_view.png`: 상세 프로세스 실행 시각화
+![timeline_view](https://github.com/user-attachments/assets/72021bac-d1c0-40b3-8be5-608e1814ed4f)
+
