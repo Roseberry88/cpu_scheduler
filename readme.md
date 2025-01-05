@@ -2,6 +2,22 @@
 
 이 프로젝트는 다양한 CPU 스케줄링 알고리즘을 구현하고, 프로세스 간 통신(IPC)을 지원하며 실행 결과를 시각화하는 프로그램입니다.
 
+## 시작에 앞서
+ - Dynamic Priority Scheduling는 Dynamic Priority Scheduling 안에 Rate Monotonic, Earliest Deadline First 가 있어서 별도 구현 X
+ - Process 안에 들어있는 내용 :
+   - Process ID
+   - Arrival Time
+   - Burst Time
+   - Time Quantum(RR용)
+   - Priority(Priority 용)
+   - [Queue Level(3단계), Queue Type(해당 Queue 안에 있는 프로세스를 어떤 순서로 진행할지)] (Multi-Level Queue Scheduling용)
+   - 의존성 (임의의 프로세스를 선정해서 프로세스간의 의존성을 설정함) (Inter-Process Communication용)
+  - IPC의 구현의 예시(의존성)
+    - 시간 0: A 시작 (실행시간 5)
+    - 시간 5: A 종료, B에게 메시지 전달, B 시작 (실행시간 3)
+    - 시간 8: B 종료, C에게 메시지 전달, C 시작 (실행시간 1)
+    - 시간 9: C 종료
+    - **<u>즉, C는 B가 종료되야만, B는 A가 종료되야만 실행 가능</u>**
 ## 시작하기
 
 ### 필요한 환경
