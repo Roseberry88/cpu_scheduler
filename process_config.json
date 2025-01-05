@@ -1,0 +1,100 @@
+{
+    "processes": [
+        {
+            "process_id": 1,
+            "arrival_time": 0,
+            "burst_time": 12,
+            "priority": 6,
+            "queue_level": "B",
+            "dependencies": []
+        },
+        {
+            "process_id": 2,
+            "arrival_time": 16,
+            "burst_time": 19,
+            "priority": 3,
+            "queue_level": "B",
+            "dependencies": [
+                9
+            ]
+        },
+        {
+            "process_id": 3,
+            "arrival_time": 13,
+            "burst_time": 15,
+            "priority": 5,
+            "queue_level": "B",
+            "dependencies": []
+        },
+        {
+            "process_id": 4,
+            "arrival_time": 10,
+            "burst_time": 17,
+            "priority": 7,
+            "queue_level": "C",
+            "dependencies": []
+        },
+        {
+            "process_id": 5,
+            "arrival_time": 14,
+            "burst_time": 13,
+            "priority": 10,
+            "queue_level": "A",
+            "dependencies": []
+        },
+        {
+            "process_id": 6,
+            "arrival_time": 9,
+            "burst_time": 12,
+            "priority": 4,
+            "queue_level": "C",
+            "dependencies": [
+                2
+            ]
+        },
+        {
+            "process_id": 7,
+            "arrival_time": 16,
+            "burst_time": 17,
+            "priority": 2,
+            "queue_level": "C",
+            "dependencies": []
+        },
+        {
+            "process_id": 8,
+            "arrival_time": 10,
+            "burst_time": 12,
+            "priority": 8,
+            "queue_level": "B",
+            "dependencies": [
+                6
+            ]
+        },
+        {
+            "process_id": 9,
+            "arrival_time": 11,
+            "burst_time": 17,
+            "priority": 9,
+            "queue_level": "A",
+            "dependencies": []
+        },
+        {
+            "process_id": 10,
+            "arrival_time": 7,
+            "burst_time": 14,
+            "priority": 1,
+            "queue_level": "C",
+            "dependencies": []
+        }
+    ],
+    "metadata": {
+        "scheduler_settings": {
+            "time_quantum": 4,
+            "mlq_algorithms": {
+                "A": "RR",
+                "B": "RR",
+                "C": "RR"
+            }
+        }
+    }
+}
